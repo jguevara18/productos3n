@@ -289,75 +289,44 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-    .nav-links {
-        flex-direction: column;
-    }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .hero-text, .hero-image {
-        max-width: 100%;
-    }
-
-    .product-line, .features, .tips .tip {
-        flex-direction: column;
-    }
-
-    .product, .features .feature {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-}
 
 /* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
 @media (max-width: 768px) {
     .nav-links {
         display: none; /* Ocultar los enlaces de navegación en pantallas pequeñas */
     }
-
-    .search-bar input {
-        width: 100%;
+    .logo img {
+        height: 60px; /* Reducir el tamaño del logo en pantallas pequeñas */
     }
-
+    .hero-text {
+        max-width: 80%; /* Ajustar el ancho del texto en el héroe para pantallas pequeñas */
+    }
     .hero-text h1 {
         font-size: 36px; /* Reducir el tamaño del título en pantallas pequeñas */
     }
-
-    .hero-text p, .product p {
-        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
-    }
-
-    .hero-image img, .product img {
-        height: 200px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
-    }
-
-    .features, .product-line, .tips {
-        padding: 20px 10px; /* Ajustar el relleno en pantallas pequeñas */
+    .hero-text p {
+        font-size: 14px; /* Reducir el tamaño del texto en pantallas pequeñas */
     }
 }
 
-/* Media query para pantallas muy pequeñas (por ejemplo, dispositivos móviles con pantallas estrechas) */
-@media (max-width: 480px) {
+/* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 576px) {
+    .hero-text {
+        max-width: 100%; /* Ajustar el ancho del texto en el héroe para pantallas muy pequeñas */
+    }
     .hero-text h1 {
         font-size: 24px; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
     }
-
-    .hero-text p, .product p, .tips p {
-        font-size: 14px; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+    .hero-text p {
+        font-size: 12px; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
     }
-
-    .hero-image img, .product img, .tips img {
-        height: 150px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
-    }
-
-    .contact input, .contact button {
-        width: 100%; /* Ajustar el ancho de los campos de entrada y botones en pantallas muy pequeñas */
+    .hero-image img {
+        height: 300px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
     }
 }
+
 
 
 
