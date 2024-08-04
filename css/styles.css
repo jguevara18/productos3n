@@ -303,6 +303,13 @@ footer {
     .hero-text {
         max-width: 80%; /* Ajustar el ancho del texto en el héroe para pantallas pequeñas */
     }
+    .client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
     .hero-text h1 {
         font-size: 36px; /* Reducir el tamaño del título en pantallas pequeñas */
     }
@@ -318,6 +325,9 @@ footer {
     }
     .hero-text h1 {
         font-size: 24px; /* Reducir aún más el tamaño del título en pantallas muy pequeñas */
+    }
+    .client{
+        gap: 10px; /* Reducir el espacio entre los clientes en pantallas muy pequeñas */
     }
     .hero-text p {
         font-size: 12px; /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
