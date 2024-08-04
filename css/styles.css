@@ -1,0 +1,304 @@
+/* styles.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.logo img {
+    height: 80px;
+    padding-inline-end: 20px;
+   
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0px 30px 0px 60px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image img {
+    height: 600px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.features .feature {
+    text-align: center;
+}
+
+.features .feature img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.client_img1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 300px;
+    width: auto;
+
+    margin-bottom: 10px;    
+}
+
+
+.products {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    text-align: center;
+    max-width: 30%;
+}
+
+.product img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tips {
+    display:flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.tips h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tips .tip {
+    text-align: center;
+    max-width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.tips img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content .footer-logo img {
+    height: 50px;
+}
+
+.footer-content .footer-map img {
+    height: 150px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .product-line, .features, .tips .tip {
+        flex-direction: column;
+    }
+
+    .product, .features .feature {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p, .product p {
+        font-size: 16px;
+    }
+
+    .hero-image img, .product img {
+        height: 200px;
+    }
+
+    .features, .product-line, .tips {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p, .product p, .tips p {
+        font-size: 14px;
+    }
+
+    .hero-image img, .product img, .tips img {
+        height: 150px;
+    }
+
+    .contact input, .contact button {
+        width: 100%;
+    }
+}
