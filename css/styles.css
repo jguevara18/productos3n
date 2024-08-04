@@ -290,7 +290,32 @@ footer {
 
 /* Media Queries */
 
+@media (max-width: 1200px) {
+    .nav-links {
+        flex-direction: column;
+    }
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+    .client {
+        display: none; /* Ocultar la sección de clientes en pantallas pequeñas */
+    }
+
+    .product-line, .features, .tips .tip {
+        flex-direction: column;
+    }
+
+    .product, .features .feature {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 /* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
 @media (max-width: 768px) {
