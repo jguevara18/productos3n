@@ -290,7 +290,7 @@ footer {
 
 /* Media Queries */
 
-@media (600px <= max-width <= 1200px) {
+@media only screen and (max-width: 600px) {
     nav {
         flex-direction: column;
     }
@@ -300,95 +300,94 @@ footer {
         padding: 20px;
     }
     
-    nav.logo img {
+    nav .logo img {
         height: 60px;
     }
     
-    nav.nav-links {
+    nav .nav-links {
         flex-direction: column;
         align-items: start;
     }
     
-    nav.nav-links li {
+    nav .nav-links li {
         margin-bottom: 10px;
     }
     
-    nav.nav-links a {
+    nav .nav-links a {
         font-size: 14px;
     }
     
-    header.search-bar input {
+    header .search-bar input {
         width: 100%;
     }
     
-    header.search-bar button {
+    header .search-bar button {
         margin-left: 0;
     }
     
-    footer.footer-content {
+    footer .footer-content {
         flex-direction: column;
         align-items: center;
     }
     
-    footer.footer-content.footer-logo img {
+    footer .footer-content .footer-logo img {
         height: 80px;
     }
     
-    footer.footer-content.footer-map img {
+    footer .footer-content .footer-map img {
         height: 120px;
     }
     
-    footer.footer-bottom {
+    footer .footer-bottom {
         text-align: left;
     }
     
     /* Hero */
-    header.hero {
+    header .hero {
         padding: 0px 30px;
     }
     
-    header.hero-text {
+    header .hero-text {
         max-width: 100%;
     }
     
-    header.hero-image img {
+    header .hero-image img {
         height: 300px;
     }
     
     /* Features */
-   .features {
-    flex-direction: column;
+    .features {
+        flex-direction: column;
         align-items: center;
     }
     
     /* Products */
-   .products {
-    flex-direction: column;
+    .products {
+        flex-direction: column;
         align-items: center;
     }
     
     /* Tips */
-   .tips {
-    flex-direction: column;
+    .tips {
+        flex-direction: column;
         align-items: center;
     }
     
     /* Contact */
-   .contact {
-    flex-direction: column;
+    .contact {
+        flex-direction: column;
         align-items: center;
     }
-    
-    /* Footer */
-    
-
-
-
-
-
-
-
 }
+    
+
+
+
+
+
+
+
+
 
 
 
