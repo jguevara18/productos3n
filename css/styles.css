@@ -78,7 +78,7 @@ nav {
     justify-content: space-around;
     padding: 40px 0;
     background-color: #ffffff;
-    ;
+    
 }
 .features .feature {
     text-align: center;
@@ -125,7 +125,7 @@ nav {
 .pic-ctn > img {
     position: absolute;
     top: 0;
-    left: calc(50% - 100px);
+    left: calc(70% - 100px);
     opacity: 0;
     animation: display 10s infinite;
 }
