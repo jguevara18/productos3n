@@ -176,9 +176,10 @@ nav {
 
 
 .products {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1600px;
+    margin: 0;
     padding: 40px 20px;
+    background-color: #cccccc;
 }
 
 .products h2 {
@@ -289,6 +290,8 @@ footer {
 
 .footer-content .footer-map img {
     height: 150px;
+    border-radius: 5px;
+    
 }
 
 .footer-bottom {
@@ -357,7 +360,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 1600px;
+        max-width: 1200px;
         margin: auto;
         padding: 0px 30px;
     }
@@ -432,6 +435,7 @@ footer {
     
     .products h2 {
         text-align: center;
+        
         margin-bottom: 40px;
     }
     
