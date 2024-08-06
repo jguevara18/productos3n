@@ -11,7 +11,7 @@ html, body {
 header {
     background-color: #3333ff;
     width: fit-content;
-    color: white;
+    color: #ffffff;
     
 }
 
@@ -42,7 +42,7 @@ nav {
 .nav-links a {
     color: #cccccc;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     
 }
 .nav-links:hover a {
@@ -98,7 +98,8 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
+    ;
 }
 
 .features .feature {
@@ -271,9 +272,10 @@ nav {
 
 footer {
     display:block;
+    height: auto;
     background-color: #66ccff;
     color: white;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .footer-content {
@@ -325,7 +327,7 @@ footer {
     }
     
     .logo img {
-        height: 60px;
+        height: 80px;
         padding-inline-end: 5px;
     }
     
@@ -421,50 +423,17 @@ footer {
         margin-bottom: 10px;
     }
     
-       
-   
-        
-    .products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px 20px;
-    }
-    
-    .products h2 {
-        text-align: center;
-        
-        margin-bottom: 40px;
-    }
-    
     .product-line {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .product {
-        text-align: center;
-        max-width: 100;
-        margin-bottom: 20px;
-    }
-    
-    .product img {
-        align-items: center;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-    
-    .product button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #ff0000;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
+        flex-direction: column; /* Cambiar la dirección de la línea de productos en dispositivos móviles */
+      }
+      .product {
+        max-width: 100%; /* Ajustar el ancho del producto en dispositivos móviles */
+        text-align: center; /* Centrar el producto en dispositivos móviles */
+      }
+      .product img {
+        height: 50%; /* Ajustar la altura de la imagen del producto en dispositivos móviles */
+        width: 50%; /* Ajustar el ancho de la imagen del producto en dispositivos móviles */
+      }
     
     .tips {
         display: flex;
@@ -552,12 +521,12 @@ footer {
     }
     
     .footer-bottom {
-        text-align: left;
+        text-align:center;
         margin-top: 20px;
     }
     .footer-bottom img{
         display: inline-block;
-       padding-left: 50px;
+      
         height: 30px;
         width: 30px;
         margin-right: 10px;
